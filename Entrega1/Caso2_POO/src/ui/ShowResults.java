@@ -10,8 +10,13 @@ import javax.swing.JLabel;
 import javax.swing.JTextArea;
 
 public class ShowResults extends JFrame{
-	private JTextArea textArea1;
-	private JTextArea textArea2;
+	private JTextArea t_humedad;
+	private JTextArea tviento;
+	private JTextArea t_atmos;
+	private JTextArea tregion;
+	private JTextArea t_fecha;
+	private JTextArea lluvia;
+
 	private JButton button2;
 	private int ancho = 90;
 	private int alto = 20;
@@ -51,25 +56,52 @@ public class ShowResults extends JFrame{
         
         
         
-        /*textArea1 = new JTextArea();
-        textArea1.setLineWrap(true); // Enable line wrapping
-        textArea1.setWrapStyleWord(true); // Wrap at word boundaries
+        t_humedad = new JTextArea();
+        t_humedad.setLineWrap(false); // Enable line wrapping
+        t_humedad.setWrapStyleWord(false); // Wrap at word boundaries
+        t_humedad.setEditable(false);
         
-        textArea2 = new JTextArea();
-        textArea2.setLineWrap(true); // Enable line wrapping
-        textArea2.setWrapStyleWord(true); // Wrap at word boundaries
+        tviento = new JTextArea();
+        tviento.setLineWrap(true); // Enable line wrapping
+        tviento.setWrapStyleWord(true); // Wrap at word boundaries
+        tviento.setEditable(false);
+        
+        t_atmos = new JTextArea();
+        t_atmos.setLineWrap(true); // Enable line wrapping
+        t_atmos.setWrapStyleWord(true); // Wrap at word boundaries
+        t_atmos.setEditable(false);
+        
+        tregion = new JTextArea();
+        tregion.setLineWrap(true); // Enable line wrapping
+        tregion.setWrapStyleWord(true); // Wrap at word boundaries
+        tregion.setEditable(false);
+        
+        t_fecha = new JTextArea();
+        t_fecha.setLineWrap(true); // Enable line wrapping
+        t_fecha.setWrapStyleWord(true); // Wrap at word boundaries
+        t_fecha.setEditable(false);
 
-        Rectangle textAreaBounds = new Rectangle(120, 70, 180, 200);
-        textAreaBounds.setSize(ancho, alto);
+        lluvia = new JTextArea();
+        lluvia.setLineWrap(true); // Enable line wrapping
+        lluvia.setWrapStyleWord(true); // Wrap at word boundaries
+        lluvia.setEditable(false);
+
         
-        Rectangle textAreaBounds2 = new Rectangle(120, 100, 180, 200);
-        textAreaBounds2.setSize(ancho, alto);
-        textArea1.setBounds(textAreaBounds);
-        textArea2.setBounds(textAreaBounds2);
+        t_humedad.setBounds(510, 120, 50, 15);
+        tviento.setBounds(240, 120, 50, 15);
+        t_atmos.setBounds(350, 120, 75, 15);
+        tregion.setBounds(50, 120, 50, 15);
+        t_fecha.setBounds(150, 120, 50, 15);
+        lluvia.setBounds(590, 120, 100, 15);
         
         // Add text area to the frame's content pane
-        getContentPane().add(textArea1);   
-        getContentPane().add(textArea2);*/
+        getContentPane().add(t_humedad);   
+        getContentPane().add(tviento);
+        getContentPane().add(t_atmos);   
+        getContentPane().add(tregion);
+        getContentPane().add(t_fecha);   
+        getContentPane().add(lluvia);
+
         
         JButton button1 = new JButton("Cancelar");
 
