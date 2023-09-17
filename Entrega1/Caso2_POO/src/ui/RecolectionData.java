@@ -26,7 +26,8 @@ import com.toedter.calendar.JDateChooser;
  * 
  * es un sistema de consulta únicamente, como decis, region y fecha, para hacer un pronóstico
  * dado que se ocupan muchos datos, podemos darle parámetros al json para que el programa auto 
- * genere los datos, salvo que tengas otra fuente para los datos
+ * genere los datos
+ *Será con un Json escrito y realizado para poder darle inicio al proceso y tener los datos necesarios
  */
 public class RecolectionData extends JFrame{
 	JDateChooser dateChooser;
