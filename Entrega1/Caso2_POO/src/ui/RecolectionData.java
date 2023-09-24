@@ -47,38 +47,51 @@ public class RecolectionData extends JFrame{
         
         JLabel label_titulo = new JLabel("Busqueda de datos del clima de una region");
         JLabel label_region = new JLabel("Region");
+        JLabel label_provincia = new JLabel("Provincia");
         JLabel label_date = new JLabel("Date");
         
         label_titulo.setFont(new Font("Arial", Font.BOLD, 11)); // Set font and size
         label_titulo.setForeground(Color.BLACK); // Set text color
         label_titulo.setBounds(150, 10, 350, 40);
         
+        label_provincia.setFont(new Font("Arial", Font.BOLD, 11)); // Set font and size
+        label_provincia.setForeground(Color.BLACK); // Set text color
+        label_provincia.setBounds(40, 60, 100, 40);
+        
         label_region.setFont(new Font("Arial", Font.BOLD, 11)); // Set font and size
         label_region.setForeground(Color.BLACK); // Set text color
-        label_region.setBounds(40, 60, 100, 40);
+        label_region.setBounds(40, 80, 100, 40);
         
         label_date.setFont(new Font("Arial", Font.BOLD, 11)); // Set font and size
         label_date.setForeground(Color.BLACK); // Set text color
-        label_date.setBounds(40, 90, 100, 40);
+        label_date.setBounds(40, 120, 100, 40);
         
         //Objeto Calendario
-        dateChooser.setBounds(90, 100, 100, 40);
+        dateChooser.setBounds(120, 120, 100, 40);
 
         // Add label to the frame's content pane
         getContentPane().setLayout(null);
         getContentPane().add(label_titulo);
         getContentPane().add(label_region);
+        getContentPane().add(label_provincia);
         getContentPane().add(label_date);
         getContentPane().add(dateChooser);
 
         
      // Crear un arreglo de opciones
-        String[] opciones = {"Opción 1", "Opción 2", "Opción 3", "Opción 4", "Opción 5"};
-        
+        String[] opciones = {"Cartago", "Alajuela", "Heredia", "Limón", "San José", "Guanacaste", "Puntarenas"};
         // Crear un JComboBox y agregar las opciones
-        JComboBox<String> comboBox = new JComboBox<>(opciones);
-        comboBox.setBounds(120, 70, 180, 20);
-        getContentPane().add(comboBox);
+        JComboBox<String> comboBox_provincias = new JComboBox<>(opciones);
+        comboBox_provincias.setBounds(120, 70, 180, 20);
+        getContentPane().add(comboBox_provincias);
+        
+     // Crear un arreglo de opciones
+        String[] opciones_regiones = {"Cartago Centro", "Turrialba ", "Orosi", "Heredia Centro",
+        		"Santo Domingo", "Barva", "San José Centro", "San Pedro", "Escazú"};
+        // Crear un JComboBox y agregar las opciones
+        JComboBox<String> comboBox_regiones = new JComboBox<>(opciones_regiones);
+        comboBox_regiones.setBounds(120, 95, 180, 20);
+        getContentPane().add(comboBox_regiones);
         
         
         JButton button1 = new JButton("Mostrar");
@@ -93,24 +106,16 @@ public class RecolectionData extends JFrame{
         getContentPane().setLayout(null);
         
         
-        button1.addActionListener(e -> Imprimir(comboBox, dateChooser));
+        button1.addActionListener(e -> ConectarController(comboBox_regiones,comboBox_provincias, dateChooser));
 
 	}
-	
-	private void Imprimir(JComboBox<String> boton, JDateChooser fecha) {
-		/*
-		// Obtener la opción seleccionada
-        String seleccion = (String) boton.getSelectedItem();
-        
+	private void ConectarController(JComboBox<String> boton_region,JComboBox<String> boton_provincia, JDateChooser fecha) {
         //Fecha
         Date date = fecha.getDate();
-        
         String fecha_correcta = formatoCorto.format(date);
         
-        // Mostrar un cuadro de diálogo con la opción seleccionada
-        JOptionPane.showMessageDialog(boton, "La seleccion es " + seleccion + "\n" + 
-        "La fecha seleccionada es " + fecha_correcta);*/
-		
+		//creo instancia del controller
+		ControllerUIEntrada solicitud = new ControllerUIEntrada(fecha_correcta, boton_provincia.getSelectedItem().toString(), boton_region.getSelectedItem().toString());
 		muestra.setVisible(true);
 	}
 

@@ -1,0 +1,378 @@
+{
+    "provincias_regiones":[
+        {
+            "nombre": "San José",
+            "Regiones": [
+                "San José Centro",
+                "San Pedro",
+                "Escazú"
+            ]
+        },
+        {
+            "nombre": "Alajuela",
+            "Regiones": [
+                "Alajuela Centro",
+                "San Ramón",
+                "La Fortuna de San Carlos"
+            ]
+        },
+        {
+            "nombre": "Cartago",
+            "Regiones": [
+                "Cartago Centro",
+                "Turrialba",
+                "Orosi"
+            ]
+        },
+        {
+            "nombre": "Heredia",
+            "Regiones": [
+                "Heredia Centro",
+                "Santo Domingo",
+                "Barva"
+            ]
+        },
+        {
+            "nombre": "Guanacaste",
+            "Regiones": [
+                "Golfo de Papagayo",
+                "Nicoya",
+                "Rincón de la vieja"
+            ]
+        },
+        {
+            "nombre": "Puntarenas",
+            "Regiones": [
+                "Peninsula de Nicoya",
+                "Golfito",
+                "Monte verde"
+            ]
+        },
+        {
+            "nombre": "Limón",
+            "Regiones": [
+                "Cahuita",
+                "Tortuguero",
+                "Puerto viejo"
+            ]
+        }
+    ],
+    "regiones": [
+        {
+            "nombre": "San José Centro",
+            "temp": {
+                "min": 18,
+                "max": 26
+            },
+            "velocidad_viento": {
+                "min": 0,
+                "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "San Pedro",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Escazú",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia":{
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Alajuela Centro",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "San Ramón",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 3
+            }
+        },
+        {
+            "nombre": "La Fortuna de San Carlos",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Cartago Centro",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Turrialba",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Orosi",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia":{
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Heredia Centro",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Santo Domingo",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Barva",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Golfo de Papagayo",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Nicoya",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Rincón de la vieja",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Península de Nicoya",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Golfito",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Monte Verde",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Cahuita",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Tortuguero",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        },
+        {
+            "nombre": "Puerto Viejo",
+            "temp": {
+            "min": 18,
+            "max": 26
+            },
+            "velocidad_viento": {
+            "min": 0,
+            "max": 6
+            },
+            "lluvia": {
+                "min": 0,
+                "max": 6
+            }
+        }
+    ]
+    
+}
