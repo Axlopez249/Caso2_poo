@@ -15,22 +15,44 @@ public class Region {
 	private int min_lluvia;
 	private int max_lluvia;
 	
-	public Region(String pnombre, JsonObject ptemp, JsonObject pvelocidadViento, JsonObject plluvia) {
+	public Region(String pnombre, int ptempmin, int ptempmax, int pvimin, int pvimax, int pllmin, int pllmax) {
 		this.nombre = pnombre;
-		
-		extraer_dator(ptemp, pvelocidadViento, plluvia);
+		this.max_lluvia = pllmax;
+		this.min_lluvia = pllmin;
+		this.temp_max = ptempmax;
+		this.temp_min = ptempmin;
+		this.vel_max = pvimax;
+		this.vel_min = pvimin;
 	}
 	
-	public void extraer_dator(JsonObject temperatura, JsonObject viento, JsonObject lluvia) {
-		this.temp_min = temperatura.getInt("min");
-		this.temp_max = temperatura.getInt("max");
-		
-		this.vel_min = viento.getInt("min");
-		this.vel_max = viento.getInt("max");
-		
-		this.min_lluvia = lluvia.getInt("min");
-		this.max_lluvia = lluvia.getInt("max");
-		
+
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public int getTemp_min() {
+		return temp_min;
+	}
+
+	public int getTemp_max() {
+		return temp_max;
+	}
+
+	public int getVel_min() {
+		return vel_min;
+	}
+
+	public int getVel_max() {
+		return vel_max;
+	}
+
+	public int getMin_lluvia() {
+		return min_lluvia;
+	}
+
+	public int getMax_lluvia() {
+		return max_lluvia;
 	}
 	
 }

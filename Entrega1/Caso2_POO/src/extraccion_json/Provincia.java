@@ -11,25 +11,19 @@ public class Provincia {
 	private ArrayList<String> listRegiones;
 	
 	//constructor guarda el nombre de la provincia y un jsonarray para extraerlo
-	public Provincia(String pnombre, JsonArray pregionesProvincia) {
+
+	public Provincia(String pnombre, ArrayList<String> plistRegiones) {
 		this.nombre = pnombre;
 		
-		extraer_regiones(pregionesProvincia);
+		this.listRegiones = plistRegiones;
 	}
 	
-	//Toma un jsonarray donde lo recorre y lo guarda en una lista de la provincia
-	public void extraer_regiones(JsonArray pregionesProvincia) {
-		for (JsonValue regi : pregionesProvincia) {
-            listRegiones.add(regi.toString());
-        }
+	public ArrayList<String> getListRegiones(){
+		return listRegiones;
 	}
 
 	public String getNombre() {
 		return nombre;
-	}
-
-	public ArrayList<String> getListRegiones() {
-		return listRegiones;
 	}
 	
 	
