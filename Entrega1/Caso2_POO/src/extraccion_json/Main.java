@@ -10,6 +10,17 @@ public class Main {
 		ArrayList<Provincia> provincias = g.cargarListaProvincias();
 		ArrayList<Region> regiones = g.cargarListaRegion();
 
+		Historico historico = new Historico(provincias, regiones);
+		ArrayList<ObjetoHistorico> heredia = historico.getHeredia();
+		
+		
+		for (ObjetoHistorico objeto : heredia) {
+			if (objeto.getNombre_region().equals("Santo Domingo")) {
+				
+				System.out.println("Año: " + objeto.getFecha().getAño() + " Mes: " + objeto.getFecha().getMes() + " Dia: " + objeto.getFecha().getDia() + "    Lluvia: " + objeto.getLluvia());
+			}
+			
+		}
 		
 		//impresion
 		/*for(Provincia elemento: provincias) {
@@ -20,7 +31,7 @@ public class Main {
 			}
 		}*/
 		
-		for(Region elemento: regiones) {
+		/*for(Region elemento: regiones) {
 			System.out.println("Nombre de la region " + elemento.getNombre());
 			System.out.println(elemento.getMax_lluvia());
 			System.out.println(elemento.getMin_lluvia());
@@ -28,7 +39,9 @@ public class Main {
 			System.out.println(elemento.getTemp_min());
 			System.out.println(elemento.getVel_max());
 			System.out.println(elemento.getVel_min());
-		}
+		}*/
+		
+		
 		
 		
 		

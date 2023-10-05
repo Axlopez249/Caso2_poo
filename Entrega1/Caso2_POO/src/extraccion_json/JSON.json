@@ -1,18 +1,18 @@
 {
     "provincias_regiones":[
         {
-            "nombre": "San José",
+            "nombre": "San Jose",
             "Regiones": [
-                "San José Centro",
+                "San Jose Centro",
                 "San Pedro",
-                "Escazú"
+                "Escazu"
             ]
         },
         {
             "nombre": "Alajuela",
             "Regiones": [
                 "Alajuela Centro",
-                "San Ramón",
+                "San Ramon",
                 "La Fortuna de San Carlos"
             ]
         },
@@ -49,7 +49,7 @@
             ]
         },
         {
-            "nombre": "Limón",
+            "nombre": "Limon",
             "Regiones": [
                 "Cahuita",
                 "Tortuguero",
@@ -59,7 +59,7 @@
     ],
     "caracteristicas_regiones": [
         {
-            "nombre": "San José Centro",
+            "nombre": "San Jose Centro",
             "temp": {
                 "min": 22,
                 "max": 28
@@ -89,7 +89,7 @@
             }
         },
         {
-            "nombre": "Escazú",
+            "nombre": "Escazu",
             "temp": {
                 "min": 18,
                 "max": 24
@@ -119,7 +119,7 @@
             }
         },
         {
-            "nombre": "San Ramón",
+            "nombre": "San Ramon",
             "temp": {
                 "min": 20,
                 "max": 26
@@ -269,7 +269,7 @@
             }
         },
         {
-            "nombre": "Rincón de la Vieja",
+            "nombre": "Rincon de la Vieja",
             "temp": {
                 "min": 24,
                 "max": 29
@@ -284,7 +284,7 @@
             }
         },
         {
-            "nombre": "Península de Nicoya",
+            "nombre": "Peninsula de Nicoya",
             "temp": {
                 "min": 20,
                 "max": 26
