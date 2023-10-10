@@ -5,11 +5,11 @@ import java.util.Date;
 public class ObjetoHistorico {
 	private String nombre_region;
 	private int temp;
-	private Fecha fecha;
+	private Date fecha;
 	private int viento;
 	private int lluvia;
 	
-	public ObjetoHistorico(String pnombre_region, int ptemp, Fecha pfecha, int pviento, int plluvia) {
+	public ObjetoHistorico(String pnombre_region, int ptemp, Date pfecha, int pviento, int plluvia) {
 		this.fecha = pfecha;
 		this.lluvia = plluvia;
 		this.nombre_region = pnombre_region;
@@ -24,7 +24,7 @@ public class ObjetoHistorico {
 	public int getTemp() {
 		return temp;
 	}
-	public Fecha getFecha() {
+	public Date getFecha() {
 		return fecha;
 	}
 	public int getViento() {

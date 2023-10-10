@@ -57,9 +57,8 @@
             ]
         }
     ],
-    "caracteristicas_regiones": [
-        {
-            "nombre": "San Jose Centro",
+    "caracteristicas_regiones": {
+        "San Jose Centro": {
             "temp": {
                 "min": 22,
                 "max": 28
@@ -73,8 +72,8 @@
                 "max": 5
             }
         },
-        {
-            "nombre": "San Pedro",
+        "San Pedro":{
+            
             "temp": {
                 "min": 20,
                 "max": 26
@@ -88,8 +87,8 @@
                 "max": 6
             }
         },
-        {
-            "nombre": "Escazu",
+        "Escazu":{
+            
             "temp": {
                 "min": 18,
                 "max": 24
@@ -103,8 +102,8 @@
                 "max": 9
             }
         },
-        {
-            "nombre": "Alajuela Centro",
+        "Alajuela Centro":{
+            
             "temp": {
                 "min": 19,
                 "max": 25
@@ -118,8 +117,8 @@
                 "max": 6
             }
         },
-        {
-            "nombre": "San Ramon",
+        "San Ramon":{
+            
             "temp": {
                 "min": 20,
                 "max": 26
@@ -133,8 +132,7 @@
                 "max": 5
             }
         },
-        {
-            "nombre": "La Fortuna de San Carlos",
+        "La Fortuna de San Carlos":{
             "temp": {
                 "min": 20,
                 "max": 23
@@ -148,8 +146,8 @@
                 "max": 9
             }
         },
-        {
-            "nombre": "Cartago Centro",
+        "Cartago Centro":{
+            
             "temp": {
                 "min": 19,
                 "max": 25
@@ -163,8 +161,8 @@
                 "max": 4
             }
         },
-        {
-            "nombre": "Turrialba",
+        "Turrialba":{
+            
             "temp": {
                 "min": 18,
                 "max": 25
@@ -178,8 +176,8 @@
                 "max": 4
             }
         },
-        {
-            "nombre": "Orosi",
+        "Orosi":{
+            
             "temp": {
                 "min": 19,
                 "max": 25
@@ -193,8 +191,8 @@
                 "max": 8
             }
         },
-        {
-            "nombre": "Heredia Centro",
+        "Heredia Centro":{
+            
             "temp": {
                 "min": 20,
                 "max": 24
@@ -208,8 +206,8 @@
                 "max": 6
             }
         },
-        {
-            "nombre": "Santo Domingo",
+        "Santo Domingo":{
+            
             "temp": {
                 "min": 22,
                 "max": 26
@@ -223,8 +221,8 @@
                 "max": 3
             }
         },
-        {
-            "nombre": "Barva",
+        "Barva":{
+            
             "temp": {
                 "min": 21,
                 "max": 28
@@ -238,8 +236,8 @@
                 "max": 4
             }
         },
-        {
-            "nombre": "Golfo de Papagayo",
+        "Golfo de Papagayo":{
+            
             "temp": {
                 "min": 18,
                 "max": 27
@@ -253,8 +251,8 @@
                 "max": 8
             }
         },
-        {
-            "nombre": "Nicoya",
+        "Nicoya":{
+            
             "temp": {
                 "min": 24,
                 "max": 30
@@ -268,8 +266,8 @@
                 "max": 3
             }
         },
-        {
-            "nombre": "Rincon de la Vieja",
+        "Rincon de la Vieja":{
+            
             "temp": {
                 "min": 24,
                 "max": 29
@@ -283,8 +281,8 @@
                 "max": 5
             }
         },
-        {
-            "nombre": "Peninsula de Nicoya",
+        "Peninsula de Nicoya":{
+            
             "temp": {
                 "min": 20,
                 "max": 26
@@ -298,8 +296,8 @@
                 "max": 6
             }
         },
-        {
-            "nombre": "Golfito",
+        "Golfito":{
+            
             "temp": {
                 "min": 21,
                 "max": 25
@@ -313,8 +311,8 @@
                 "max": 6
             }
         },
-        {
-            "nombre": "Monte Verde",
+        "Monte Verde":{
+            
             "temp": {
                 "min": 18,
                 "max": 23
@@ -328,8 +326,8 @@
                 "max": 5
             }
         },
-        {
-            "nombre": "Cahuita",
+        "Cahuita":{
+            
             "temp": {
                 "min": 15,
                 "max": 24
@@ -343,8 +341,8 @@
                 "max": 3
             }
         },
-        {
-            "nombre": "Tortuguero",
+        "Tortuguero":{
+            
             "temp": {
                 "min": 19,
                 "max": 27
@@ -358,8 +356,8 @@
                 "max": 5
             }
         },
-        {
-            "nombre": "Puerto Viejo",
+        "Puerto Viejo":{
+            
             "temp": {
                 "min": 21,
                 "max": 26
@@ -373,6 +371,6 @@
                 "max": 5
             }
         }
-    ]
+    }
     
 }

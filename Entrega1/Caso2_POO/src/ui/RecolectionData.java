@@ -87,7 +87,9 @@ public class RecolectionData extends JFrame{
         
      // Crear un arreglo de opciones
         String[] opciones_regiones = {"Cartago Centro", "Turrialba ", "Orosi", "Heredia Centro",
-        		"Santo Domingo", "Barva", "San José Centro", "San Pedro", "Escazú"};
+        		"Santo Domingo", "Barva", "San Jose Centro", "San Pedro", "Escazu", "Alajuela Centro",
+        		"San Ramon", "La Fortuna de San Carlos", "Golfo de Papagayo", "Nicoya", "Rincón de la vieja",
+        		"Peninsula de Nicoya", "Golfito", "Monte verde", "Cahuita", "Tortuguero", "Puerto viejo"};
         // Crear un JComboBox y agregar las opciones
         JComboBox<String> comboBox_regiones = new JComboBox<>(opciones_regiones);
         comboBox_regiones.setBounds(120, 95, 180, 20);
@@ -112,11 +114,10 @@ public class RecolectionData extends JFrame{
 	private void ConectarController(JComboBox<String> boton_region,JComboBox<String> boton_provincia, JDateChooser fecha) {
         //Fecha
         Date date = fecha.getDate();
-        String fecha_correcta = formatoCorto.format(date);
         
 		//creo instancia del controller
-		ControllerUIEntrada solicitud = new ControllerUIEntrada(fecha_correcta, boton_provincia.getSelectedItem().toString(), boton_region.getSelectedItem().toString());
-		muestra.setVisible(true);
+		ControllerUIEntrada solicitud = new ControllerUIEntrada(date, boton_provincia.getSelectedItem().toString(), boton_region.getSelectedItem().toString(), muestra);
+		
 	}
 
 

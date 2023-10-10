@@ -1,9 +1,14 @@
 package funcionamiento;
 
+import java.util.ArrayList;
+
+import extraccion_json.ObjetoHistorico;
+import ui.ShowResults;
+
 public class Pronosticador_temp extends Calculo{
 
-	public Pronosticador_temp(String pprovincia_entrada, String pregion_entrada) {
-		super(pprovincia_entrada, pregion_entrada);
+	public Pronosticador_temp(ArrayList<ObjetoHistorico>regiones,String pprovincia_entrada, String pregion_entrada, ShowResults resultado) {
+		super(pprovincia_entrada, pregion_entrada, resultado);
 		// TODO Auto-generated constructor stub
 	}
 
