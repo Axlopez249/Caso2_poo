@@ -11,6 +11,8 @@ import java.util.Date;
 
 import javax.swing.*;
 
+import extraccion_json.*;
+
 
 import com.toedter.calendar.JDateChooser;
 /*
@@ -31,9 +33,11 @@ import com.toedter.calendar.JDateChooser;
 public class RecolectionData extends JFrame{
 	JDateChooser dateChooser;
 	SimpleDateFormat formatoCorto = new SimpleDateFormat("dd/MM/yyyy");
-	ShowResults muestra;
 	
-	public RecolectionData() {
+	
+	public RecolectionData(Generador_Json archivoJson) {
+		
+		
 		setTitle("RECOLECCION DE DATA / INFO. A BUSCAR");
         setSize(500, 600); // Set the desired size
         setResizable(false); // Disable frame resizing
@@ -41,7 +45,7 @@ public class RecolectionData extends JFrame{
 
         setLocation(50, 60);
         
-        muestra = new ShowResults();
+        
         
         dateChooser = new JDateChooser();
         
@@ -97,6 +101,7 @@ public class RecolectionData extends JFrame{
         
         
         JButton button1 = new JButton("Mostrar");
+        
 
         // Define positions for the buttons
         button1.setBounds(40, 280, 100, 30);
@@ -108,17 +113,21 @@ public class RecolectionData extends JFrame{
         getContentPane().setLayout(null);
         
         
-        button1.addActionListener(e -> ConectarController(comboBox_regiones,comboBox_provincias, dateChooser));
+        button1.addActionListener(e -> ConectarController(comboBox_regiones,comboBox_provincias, dateChooser, archivoJson));
 
 	}
-	private void ConectarController(JComboBox<String> boton_region,JComboBox<String> boton_provincia, JDateChooser fecha) {
-        //Fecha
+	
+	private void ConectarController(JComboBox<String> boton_region,JComboBox<String> boton_provincia, JDateChooser fecha, Generador_Json parchivoJson) {
+        
+		ShowResults muestra = new ShowResults();
+		//Fecha
         Date date = fecha.getDate();
         
 		//creo instancia del controller
-		ControllerUIEntrada solicitud = new ControllerUIEntrada(date, boton_provincia.getSelectedItem().toString(), boton_region.getSelectedItem().toString(), muestra);
+		ControllerUIEntrada solicitud = new ControllerUIEntrada(date, boton_provincia.getSelectedItem().toString(), boton_region.getSelectedItem().toString(), muestra, parchivoJson);
 		
 	}
+	
 
 
 }

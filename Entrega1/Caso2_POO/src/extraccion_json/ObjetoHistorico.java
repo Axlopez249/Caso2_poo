@@ -17,6 +17,13 @@ public class ObjetoHistorico {
 		this.temp = ptemp;
 	}
 	
+	public ObjetoHistorico(String pnombre_region, int ptemp, int pviento, int plluvia) {
+		nombre_region = pnombre_region;
+		viento = pviento;
+		temp = ptemp;
+		lluvia = plluvia;
+	}
+	
 	
 	public String getNombre_region() {
 		return nombre_region;

@@ -24,7 +24,7 @@ public class Generador_Json {
 
 	    for (JsonValue provin : jsonProvincias) {
 	        JsonObject objeto_provincia = (JsonObject) provin;
-	        ArrayList<String> regiones = new ArrayList<String>(); // Nueva lista para cada provincia
+	        ArrayList<String> regiones = new ArrayList<String>(); // Nueva lista de regiones para cada provincia
 	        
 	        ArrayList<Region> listRegiones = new ArrayList<Region>();
 	        

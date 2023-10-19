@@ -2,14 +2,33 @@ package funcionamiento;
 
 import java.util.ArrayList;
 
+import extraccion_json.Historico;
 import extraccion_json.ObjetoHistorico;
 import ui.ShowResults;
 
 public class Pronosticador_viento extends Calculo{
+	
+	private ArrayList<Integer> velVientos;
+	private ArrayList<Integer> precipitacion;
 
-	public Pronosticador_viento(ArrayList<ObjetoHistorico>regiones,String pprovincia_entrada, String pregion_entrada, ShowResults resultado) {
-		super(pprovincia_entrada, pregion_entrada,resultado);
-		// TODO Auto-generated constructor stub
+	public Pronosticador_viento() {
+		
 	}
+	
+	public ArrayList<Integer> predecirViento() {
+		ArrayList<Integer> semanaViento;
+		semanaViento = predecirAtributo(velVientos, precipitacion);
+		return semanaViento;
+	}
+
+	public void setVelVientos(ArrayList<Integer> velVientos) {
+		this.velVientos = velVientos;
+	}
+
+	public void setPrecipitacion(ArrayList<Integer> precipitacion) {
+		this.precipitacion = precipitacion;
+	}
+	
+	
 
 }

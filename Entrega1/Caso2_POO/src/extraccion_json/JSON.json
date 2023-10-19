@@ -37,7 +37,7 @@
             "Regiones": [
                 "Golfo de Papagayo",
                 "Nicoya",
-                "Rincón de la vieja"
+                "Rincon de la vieja"
             ]
         },
         {
@@ -45,7 +45,7 @@
             "Regiones": [
                 "Peninsula de Nicoya",
                 "Golfito",
-                "Monte verde"
+                "Monte Verde"
             ]
         },
         {
@@ -53,7 +53,7 @@
             "Regiones": [
                 "Cahuita",
                 "Tortuguero",
-                "Puerto viejo"
+                "Puerto Viejo"
             ]
         }
     ],
@@ -266,7 +266,7 @@
                 "max": 3
             }
         },
-        "Rincon de la Vieja":{
+        "Rincon de la vieja":{
             
             "temp": {
                 "min": 24,
